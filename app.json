@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "components",
-    "slug": "components",
+    "name": "flip-card",
+    "slug": "flip-card",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
