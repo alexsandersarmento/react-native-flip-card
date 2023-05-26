@@ -270,13 +270,15 @@ const CreditCard = () => {
 
   const checkCardType = (text: string) => {
     const cardNumber = text.slice(0, 2)
-    if (cardNumber === '51' || cardNumber === '52' || cardNumber === '53' || cardNumber === '54' || cardNumber === '55') {
+    if (['51', '52', '53', '54', '55'].includes(cardNumber)) {
       return 'mastercard'
     }
-    if (cardNumber === '40' || cardNumber === '41' || cardNumber === '42' || cardNumber === '43' || cardNumber === '44' || cardNumber === '45' || cardNumber === '46' || cardNumber === '47' || cardNumber === '48' || cardNumber === '49') {
+
+    if (['40', '41', '42', '43', '44', '45', '46', '47', '48', '49'].includes(cardNumber)) {
       return 'visa'
     }
-    if (cardNumber === '50' || cardNumber === '60' || cardNumber === '62' || cardNumber === '64' || cardNumber === '65') {
+
+    if (['50', '60', '62', '64', '65'].includes(cardNumber)) {
       return 'elo'
     }
   }
